@@ -1,0 +1,167 @@
+/*  home section style start  */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;1,300&display=swap');
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.navbar__container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0px;
+}
+
+.navbar__container a img 
+{
+    width: 250px;
+    height: auto;
+}
+
+.nav-links
+{
+    display: flex;
+    gap: 2.5rem;
+    margin-left: auto;
+    
+}
+.nav-links li a 
+{
+  font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    transition: 0.3s all ease;
+}
+
+.nav-links li a:hover
+{
+    border: solid 3px #000000;
+    padding: 15px 20px;
+} 
+
+
+
+/*  navbar section style end  */
+
+/*  home section style start  */
+.hero
+{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+.hero__wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.hero__title
+{
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+.hero__title2
+{
+    font-size: 2.7rem;
+}
+
+.hero__text
+{
+    font-size: 2rem;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.hero__overlay
+{
+    position: absolute;
+    background: url(photo/puover.jpg);
+    inset: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.1;
+    background-position: left ;
+}
+.hero__actions
+{
+    display: flex;
+    margin-top: 40px;
+
+}
+.btn--primary
+{ 
+    font-size: 2.3rem;
+    font-family: "Raleway", sans-serif;
+    font-weight:600;
+    color: #ffffff;
+    padding: 15px 25px;
+    background-color: black;
+    border: solid 20px #ffffff;
+}
+.btn--primary:hover
+{
+    background-color: #931916;
+    transform: translateY(-5px);
+}
+.prove-thing
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-weight:600;
+    padding: 60px 50px;
+    border-radius: 0px;
+}
+.uob-logo img 
+{
+    width: 100px;
+}
+.iraq
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+}
+
+.young
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+}
+
+
+
+
