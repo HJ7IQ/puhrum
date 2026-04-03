@@ -157,7 +157,7 @@
 .hero__overlay
 {
     position: absolute;
-    background: url(photo/puover.jpg);
+    background: url(puover.jpg);
     inset: 0;
     z-index: -1;
     object-fit: cover;
