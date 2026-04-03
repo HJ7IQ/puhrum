@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
   <head>
-    <link rel="icon" href="p.jpg">
+    <link rel="icon" href="photo/p.jpg">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -67,7 +67,7 @@
               <span>العراق-البصرة</span>
             </div>
             <div class="uob-logo">
-              <img src="جامعة_البصرة.png" />
+              <i class="fa-solid fa-down-long" style="font-size: 20px; display: flex; justify-content: center; margin-top: 50px;"></i>
             </div>
             <div class="young">
               <i class="fa-solid fa-user-graduate"></i>
@@ -79,5 +79,36 @@
     </section>
 
     <!--  HOME SECTION END   -->
+
+    <!--js code-->
+    <script>
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+const overlay = document.createElement("div");
+overlay.classList.add("overlay");
+document.body.appendChild(overlay);
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("active");
+  overlay.classList.toggle("active");
+
+  document.body.classList.toggle("no-scroll");
+
+  hamburger.setAttribute(
+    "aria-expanded",
+    hamburger.classList.contains("active")
+  );
+});
+
+overlay.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navLinks.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.classList.remove("no-scroll");
+});
+</script>
+<!--js end -->
   </body>
 </html>
